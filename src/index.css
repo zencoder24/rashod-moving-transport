@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+  font-family: 'DM Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent; /* removing blue highlights on click */
+}
+
+/* SVG Footer Social Icon Hover Gradients */
+
+/* Facebook hover state doesnt work for some reason unless i pull this fill:white value here... */
+#fb {
+  fill: white;
+}
+
+#fb:hover {
+  fill: url(#gradientFB);
+}
+
+#yt:hover {
+  fill: url(#gradientYT);
+}
+
+#tw:hover {
+  fill: url(#gradientTW);
+}
+
+#pin:hover {
+  fill: url(#gradientPIN);
+}
+
+#ig:hover {
+  fill: url(#gradientIG);
+}
+/* End of SVG Footer Social Icon Hover Gradients  */
+
+@media (min-width: 1024px) {
+  .borderCard {
+    box-shadow: 0 0px 0px 0px #bc7198;
+  }
+  .borderCard:hover {
+    /* border-bottom: 4px solid;
+    border-image: linear-gradient(270deg, #ffc593, #bc7198, #5a77ff) 1; */
+    box-shadow: 0 4px 0px 0px #5a77ff;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 400ms;
+  }
+
+  .storiesContainer {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 225ms;
+  }
+}

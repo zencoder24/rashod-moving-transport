@@ -1,0 +1,47 @@
+[
+  {
+    "quote": "Shod and his team helped me because of blah blah blah",
+    "images": {
+      "desktop": "./assets/home/desktop/beautiful-stories.jpg",
+      "mobile": "./assets/home/desktop/beautiful-stories.jpg",
+      "tablet": "./assets/home/desktop/beautiful-stories.jpg"
+    },
+    "type": "Business Move",
+    "quoter": "Jane Doe",
+    "id": 0
+  },
+  {
+    "quote": "Shod and his team helped me because of blah blah blah",
+    "images": {
+      "desktop": "./assets/home/desktop/beautiful-stories.jpg",
+      "mobile": "./assets/home/desktop/beautiful-stories.jpg",
+      "tablet": "./assets/home/desktop/beautiful-stories.jpg"
+    },
+    "type": "Home Move",
+    "quoter": "Bob Brown",
+    "id": 0
+  },
+  {
+    "quote": "Shod and his team helped me because of blah blah blah",
+    "images": {
+      "desktop": "./assets/home/desktop/beautiful-stories.jpg",
+      "mobile": "./assets/home/desktop/beautiful-stories.jpg",
+      "tablet": "./assets/home/desktop/beautiful-stories.jpg"
+    },
+    "type": "Business Move",
+    "quoter": "Jim Johnson",
+    "id": 0
+  },
+  {
+    "quote": "Shod and his team helped me because of blah blah blah",
+    "images": {
+      "desktop": "./assets/home/desktop/beautiful-stories.jpg",
+      "mobile": "./assets/home/desktop/beautiful-stories.jpg",
+      "tablet": "./assets/home/desktop/beautiful-stories.jpg"
+    },
+    "type": "Home Move",
+    "quoter": "John Doe",
+    "id": 0
+  }
+  
+]
