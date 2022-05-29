@@ -59,21 +59,21 @@ const Footer = () => {
                     Home
                   </li>
                 </Link>
-                <Link to="/stories">
+                
                   <li className=" text-xs font-medium tracking-x-wide uppercase cursor-pointer pb-4 md:pr-2 hover:text-gray-500">
                     Stories
                   </li>
-                </Link>
-                <Link to="/features">
+               
+                
                   <li className=" text-xs font-medium tracking-x-wide uppercase cursor-pointer pb-4 md:pr-2 hover:text-gray-500">
                     Features
                   </li>
-                </Link>
-                <Link to="/pricing">
+                
+               
                   <li className=" text-xs font-medium tracking-x-wide uppercase cursor-pointer hover:text-gray-500">
                     Pricing
                   </li>
-                </Link>
+                
               </ul>
             </div>
           </div>
