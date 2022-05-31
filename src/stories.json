@@ -1,46 +1,46 @@
 [
   {
-    "quote": "Shod and his team helped me because of blah blah blah",
-    "images": {
-      "desktop": "./assets/home/desktop/beautiful-stories.jpg",
-      "mobile": "./assets/home/desktop/beautiful-stories.jpg",
-      "tablet": "./assets/home/desktop/beautiful-stories.jpg"
-    },
-    "type": "Business Move",
-    "quoter": "Jane Doe",
-    "id": 0
-  },
-  {
-    "quote": "Shod and his team helped me because of blah blah blah",
+    "quote": "Rashod was polite quick and efficient. We usually move ourselves, but with so many friends recommending his services, we decided to try them out. It was well worth it!",
     "images": {
       "desktop": "./assets/home/desktop/beautiful-stories.jpg",
       "mobile": "./assets/home/desktop/beautiful-stories.jpg",
       "tablet": "./assets/home/desktop/beautiful-stories.jpg"
     },
     "type": "Home Move",
-    "quoter": "Bob Brown",
+    "quoter": "Judy Harting",
     "id": 0
   },
   {
-    "quote": "Shod and his team helped me because of blah blah blah",
-    "images": {
-      "desktop": "./assets/home/desktop/beautiful-stories.jpg",
-      "mobile": "./assets/home/desktop/beautiful-stories.jpg",
-      "tablet": "./assets/home/desktop/beautiful-stories.jpg"
-    },
-    "type": "Business Move",
-    "quoter": "Jim Johnson",
-    "id": 0
-  },
-  {
-    "quote": "Shod and his team helped me because of blah blah blah",
+    "quote": "Rashod and Juwan were amazing. They really knew what they were doing. The moved everything with a lot of care and it was done efficiently and quick.",
     "images": {
       "desktop": "./assets/home/desktop/beautiful-stories.jpg",
       "mobile": "./assets/home/desktop/beautiful-stories.jpg",
       "tablet": "./assets/home/desktop/beautiful-stories.jpg"
     },
     "type": "Home Move",
-    "quoter": "John Doe",
+    "quoter": "Dee Nice",
+    "id": 0
+  },
+  {
+    "quote": "Rashod and Dewayne were there on time and they worke expediitiously and pack my belonging to ensure that they were safe for the transport.",
+    "images": {
+      "desktop": "./assets/home/desktop/beautiful-stories.jpg",
+      "mobile": "./assets/home/desktop/beautiful-stories.jpg",
+      "tablet": "./assets/home/desktop/beautiful-stories.jpg"
+    },
+    "type": "Home Move",
+    "quoter": "Rose Koch",
+    "id": 0
+  },
+  {
+    "quote": "Rashod, Jaqury, Widchard, and Andrian took care of the move and they were right on time, effeicient, curteous and professional on all levels.",
+    "images": {
+      "desktop": "./assets/home/desktop/beautiful-stories.jpg",
+      "mobile": "./assets/home/desktop/beautiful-stories.jpg",
+      "tablet": "./assets/home/desktop/beautiful-stories.jpg"
+    },
+    "type": "Home Move",
+    "quoter": "Shannon Ray",
     "id": 0
   }
   

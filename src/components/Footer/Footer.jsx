@@ -8,10 +8,10 @@ import {ReactComponent as PinterestIcon} from '../../assets/shared/desktop/pinte
 import {ReactComponent as InstagramIcon} from '../../assets/shared/desktop/instagram.svg';
 import {ReactComponent as ArrowIcon} from '../../assets/shared/desktop/arrow.svg';
 
-const Footer = () => {
+const Footer = ({setOpenModal}) => {
   return (
     <div>
-      {/* Ty's version */}
+      
       <footer className="bg-pureBlack py-10 flex flex-col items-center md:flex-row md:justify-between md:items-baseline md:px-12">
         <div className="left">
           <div className="flex-container lg:flex lg:flex-row">
@@ -81,7 +81,7 @@ const Footer = () => {
         <div className="right">
           <div className="flex-container">
             <div className="arrow flex justify-center items-center pt-20 pb-8 md:pt-0 md:justify-end ">
-              <p className="uppercase text-sm tracking-x-med text-pureWhite pr-5 cursor-pointer lg:hover:underline">
+              <p onClick={() => setOpenModal(true)} className="uppercase text-sm tracking-x-med text-pureWhite pr-5 cursor-pointer lg:hover:underline">
                 Get A Quote
               </p>
               <ArrowIcon className=" stroke-pureWhite cursor-pointer" />

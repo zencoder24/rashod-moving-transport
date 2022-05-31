@@ -22,9 +22,7 @@ module.exports = {
         'x-l': '50%',
       },
       backgroundImage:{
-        'mobile-beta': "url('./assets/shared/mobile/bg-beta.jpg')",
-        'tablet-beta': "url('./assets/shared/tablet/bg-beta.jpg')",
-        'desktop-beta': "url('./assets/shared/desktop/bg-beta.jpg')"
+        'modal-bg': "url('./assets/box-wrap-modal.jpg')"
       }
     },
   },

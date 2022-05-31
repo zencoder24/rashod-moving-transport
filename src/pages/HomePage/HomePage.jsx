@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import StoriesCards from '../../components/StoriesCards';
 import testomonialData from '../../stories.json';
 import StoriesContainer from '../../components/StoriesContainer';
@@ -9,7 +9,10 @@ import PhotoFirstTablet from '../../assets/home/tablet/caleb-ruiter-EmEQ6kK_5P0-
 import PhotoSecond from '../../assets/home/mobile/packing2.jpg'
 import PhotoThird from '../../assets/home/mobile/michal-balog-66NaCdBrkCs-unsplash.jpg'
 
-const HomePage = () => {
+const HomePage = ({setOpenModal, executeScroll}) => {
+  
+
+
   return (
     <>
       <section className='section-1 md:flex '>
@@ -45,26 +48,32 @@ const HomePage = () => {
         <div className='section-paragraph py-20 px-12 md:order-1 md:py-44 lg:px-24'>
           <h1  className='text-3xl tracking-wide uppercase text-left font-bold md:text-[2.5rem] md:tracking-[0.260625rem] md:leading-10'>Moving Made Easy.</h1>
           <p className='text-base opacity-60 leading-6 mt-4 lg:mt-6'>Team of cargo experts are always available to help you with any queries you might have, or if you want to consult in length your logistic requirements. We would study your requirements and provide you with a quote that would not only suit your budget, but would also save you considerable amount of money in the long term. And, we guarantee that.</p>
-          <div className='link-container flex items-center space-x-3 mt-4 cursor-pointer lg:mt-8 '>
+          <div onClick={() => {setOpenModal(true); setOpenModal()}} className='link-container flex items-center space-x-3 mt-4 cursor-pointer lg:mt-8 '>
             <p className=' uppercase tracking-wider text-xs hover:underline'>Get a Quote</p>
             <ArrowIcon className=' stroke-black'/>
           </div>
         </div>
       </section>
-      <StoriesContainer>
-        {testomonialData
-          .map((media) => (
-            <StoriesCards
-              quote={media.quote}
-              mobile={media.images.mobile}
-              desktop={media.images.desktop}
-              tablet={media.images.tablet}
-              type={media.type}
-              quoter={media.quoter}
-              key={media.id}
-            />
-          ))}
-      </StoriesContainer>
+      <section>
+        <h1 className=' text-center font-bold text-3xl uppercase py-6'>Testimonials</h1>
+        <StoriesContainer>
+          {testomonialData
+            .map((media) => (
+              <StoriesCards
+                setOpenModal={setOpenModal}
+                quote={media.quote}
+                mobile={media.images.mobile}
+                desktop={media.images.desktop}
+                tablet={media.images.tablet}
+                type={media.type}
+                quoter={media.quoter}
+                key={media.id}
+              />
+            ))}
+        </StoriesContainer>
+
+      </section>
+     
 
       <section id='process' className='flex flex-col px-10 py-16 space-y-12 lg:flex-row lg:items-center lg:space-y-0 lg:py-24'>
             <h1 className=' text-center text-3xl font-bold'>Our Process</h1>

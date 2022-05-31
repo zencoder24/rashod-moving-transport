@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link'
 import {motion} from 'framer-motion';
 import {ReactComponent as MenuIcon} from '../../assets/shared/mobile/menu.svg';
 import {ReactComponent as CloseIcon} from '../../assets/shared/mobile/close.svg';
 import {ReactComponent as Logo} from '../../assets/shared/desktop/logo.svg';
 import LogoBrand from '../LogoBrand';
 
-const Navbar = () => {
+const Navbar = ({setOpenModal, openModal}) => {
   const [navMenuShow, setNavMenuShown] = useState(false);
 
   /** menuVariants and linkVariants are both Framer Motion varibles used to add some aninmation to the menu */
@@ -42,14 +43,17 @@ const Navbar = () => {
         <li className=" cursor-pointer uppercase text-sm tracking-wider font-bold hover:text-slate-400 lg:text-md">
          Our Process
         </li>
+
         <li className=" cursor-pointer uppercase text-sm tracking-wider font-bold hover:text-slate-400 lg:text-md">
          Contact
         </li>
       </ul>
       <div className=" hidden md:block">
-        <button className=" bg-pureBlack text-pureWhite px-8 py-3 text-sm font-bold uppercase hover:bg-slate-400 hover:text-black hover:border-white lg:text-md">
+      <HashLink smooth to="#quoteModal">
+        <button onClick={() => setOpenModal(true)} className=" bg-pureBlack text-pureWhite px-8 py-3 text-sm font-bold uppercase hover:bg-slate-400 hover:text-black hover:border-white lg:text-md">
           Get A Quote
         </button>
+      </HashLink>
       </div>
       <motion.div
         className="block md:hidden"
@@ -66,7 +70,7 @@ const Navbar = () => {
         variants={menuVariants}
         className={`${
           navMenuShow ? 'block' : 'hidden'
-        } container absolute px-6 py-8 text-center bg-pureWhite  mx-auto mt-6 top-16 left-0 right-0 w-full divide-y divide-[#968d8d] md:!hidden `}
+        } container absolute px-6 py-8 text-center bg-pureWhite  mx-auto mt-4 top-16 left-0 right-0 w-full divide-y divide-[#968d8d] md:!hidden `}
       >
         <div className="">
           <motion.h3
@@ -91,6 +95,7 @@ const Navbar = () => {
         <div className="pt-4">
           <motion.button
             variants={linkVariants}
+            onClick={() => setOpenModal(true)}
             className=" bg-pureBlack text-pureWhite w-full px-4 py-2 font-medium tracking-widest text-sm  uppercase"
           >
            Get A Quote
