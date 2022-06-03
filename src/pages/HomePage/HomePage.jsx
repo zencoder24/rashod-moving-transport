@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import StoriesCards from '../../components/StoriesCards';
 import testomonialData from '../../stories.json';
 import StoriesContainer from '../../components/StoriesContainer';
 import {ReactComponent as ArrowIcon} from '../../assets/shared/desktop/arrow.svg';
+import {HashLink} from 'react-router-hash-link'
 import FeatureItem from '../../components/FeatureItem';
 import PhotoFirstMobile from '../../assets/home/mobile/semi-truck.jpg'
 import PhotoFirstTablet from '../../assets/home/tablet/caleb-ruiter-EmEQ6kK_5P0-unsplash(1).jpg'
@@ -15,7 +16,7 @@ const HomePage = ({setOpenModal, executeScroll}) => {
 
   return (
     <>
-      <section className='section-1 md:flex '>
+      <section id="about" className='section-1 md:flex '>
         <img src={PhotoFirstMobile} alt="Boxes" className='md:order-2 md:hidden  w-fit' />
         <img src={PhotoFirstTablet} alt="Man standing on pier" className='md:order-2 hidden md:block lg:hidden w-full' />
         <img src={PhotoFirstTablet} alt="Man standing on pier" className='md:order-2 hidden md:hidden lg:block w-full' />
@@ -36,7 +37,9 @@ const HomePage = ({setOpenModal, executeScroll}) => {
           <h1 className=' text-3xl uppercase tracking-wide  text-left font-bold md:text-[2.5rem] md:tracking-[0.260625rem] md:leading-10'>We Carry Safely.</h1>
           <p className='text-base opacity-60 leading-6 mt-4 lg:mt-6'>We use durable materials, boxes, bubble-wrap and plastic to pack your things carefully. We take full responsibility over transportation. </p>
           <div href="#process" className='link-container flex items-center space-x-3 mt-4 cursor-pointer lg:mt-8 '>
-            <p className=' uppercase tracking-wider text-xs hover:underline'>Our Process</p>
+            <p className=' uppercase tracking-wider text-xs hover:underline'>
+              <HashLink smooth to="/#process">Our Process</HashLink>
+            </p>
             <ArrowIcon className=' stroke-black'/>
           </div>
         </div>
@@ -80,22 +83,22 @@ const HomePage = ({setOpenModal, executeScroll}) => {
             <FeatureItem 
               icon="truckMove" 
               title="Step 1: First Step" 
-              infomation="The is where the first step of the moving process will go"
+              infomation="Our team recieves your inquiry and get a gauge of the needs and concerns you may have."
             />
             <FeatureItem 
               icon="dolly" 
               title="Step 2: Second step" 
-              infomation="The is where the second step of the moving process will go"
+              infomation="Either via virtually or physically, we began to survey to move. We are able to provide an estimate at this point. "
             />
             <FeatureItem 
               icon="peopleCarry" 
               title="Step 3: Third step" 
-              infomation="The is where the third step of the moving process will go"
+              infomation="With your help, we set up a date to begin the move."
             />
             <FeatureItem 
               icon="thumbsUp" 
               title="Step 4: Fourth step" 
-              infomation="The is where the fourth step of the moving process will go"
+              infomation="The move begins."
             />
       </section>
     </>

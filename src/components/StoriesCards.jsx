@@ -2,7 +2,7 @@ import React from 'react';
 
 import StoryBG from '../assets/home/mobile/kadarius-seegars-DevJkLB3hWE-unsplash.jpg'
 
-function Stories({quote, mobile, desktop, tablet, type, quoter, key, setOpenModal}) {
+function Stories({quote, mobile, desktop, tablet, type, quoter, setOpenModal}) {
   return (
     <div>
       <div className="storiesContainer relative lg:hover:-translate-y-5 borderCard ease-in-out cursor-pointer">

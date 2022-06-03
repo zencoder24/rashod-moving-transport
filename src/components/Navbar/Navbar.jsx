@@ -4,7 +4,6 @@ import {HashLink} from 'react-router-hash-link'
 import {motion} from 'framer-motion';
 import {ReactComponent as MenuIcon} from '../../assets/shared/mobile/menu.svg';
 import {ReactComponent as CloseIcon} from '../../assets/shared/mobile/close.svg';
-import {ReactComponent as Logo} from '../../assets/shared/desktop/logo.svg';
 import LogoBrand from '../LogoBrand';
 
 const Navbar = ({setOpenModal, openModal}) => {
@@ -38,14 +37,19 @@ const Navbar = ({setOpenModal, openModal}) => {
       <Link to="/"><LogoBrand/></Link>
       <ul className="hidden md:flex md: space-x-12">
         <li className=" cursor-pointer uppercase text-sm tracking-wider font-bold hover:text-slate-400 lg:text-md">
-         About Us
+        <HashLink smooth to="/#about">
+          About Us
+        </HashLink>
         </li>
         <li className=" cursor-pointer uppercase text-sm tracking-wider font-bold hover:text-slate-400 lg:text-md">
-         Our Process
+        <HashLink smooth to="/#process">
+          Our Process
+        </HashLink>
         </li>
-
         <li className=" cursor-pointer uppercase text-sm tracking-wider font-bold hover:text-slate-400 lg:text-md">
-         Contact
+        <HashLink smooth to="/#contact">
+          Contact
+        </HashLink>
         </li>
       </ul>
       <div className=" hidden md:block">
@@ -77,19 +81,19 @@ const Navbar = ({setOpenModal, openModal}) => {
             variants={linkVariants}
             className="pb-3 tracking-wider text-md cursor-pointer font-bold uppercase"
           >
-           About us
+          <HashLink smooth to="/#about">About Us</HashLink>
           </motion.h3>
           <motion.h3
             variants={linkVariants}
             className="pb-3 tracking-wider text-md cursor-pointer font-bold uppercase"
           >
-            <Link to="/features">Our Process</Link>
+        <HashLink smooth to="/#process">Our Process</HashLink>
           </motion.h3>
           <motion.h3
             variants={linkVariants}
             className="pb-3 tracking-wider text-md cursor-pointer font-bold uppercase"
           >
-           Contact
+          <HashLink smooth to="/#contact">Contact</HashLink>
           </motion.h3>
         </div>
         <div className="pt-4">

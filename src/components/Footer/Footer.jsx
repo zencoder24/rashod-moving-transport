@@ -1,10 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import LogoBrand from '../LogoBrand';
+import {HashLink} from 'react-router-hash-link'
 import {ReactComponent as FacebookIcon} from '../../assets/shared/desktop/facebook.svg';
-import {ReactComponent as YoutubeIcon} from '../../assets/shared/desktop/youtube.svg';
-import {ReactComponent as TwitterIcon} from '../../assets/shared/desktop/twitter.svg';
-import {ReactComponent as PinterestIcon} from '../../assets/shared/desktop/pinterest.svg';
 import {ReactComponent as InstagramIcon} from '../../assets/shared/desktop/instagram.svg';
 import {ReactComponent as ArrowIcon} from '../../assets/shared/desktop/arrow.svg';
 
@@ -16,7 +14,7 @@ const Footer = ({setOpenModal}) => {
         <div className="left">
           <div className="flex-container lg:flex lg:flex-row">
             <div className="desktop-separation lg:pr-14">
-              <div className="title flex justify-center py-2 md:justify-start lg:pt-0">
+              <div className="title flex justify-center  md:justify-start lg:pt-0">
                 <Link to="/">
                   <LogoBrand fontColor="text-pureWhite" />
                 </Link>
@@ -31,24 +29,30 @@ const Footer = ({setOpenModal}) => {
                     </Link>
                     <Link to="/stories">
                       <li className=" text-xs font-medium tracking-x-wide uppercase cursor-pointer pb-4 md:pr-2">
-                        About Us
+                      <HashLink smooth to="/#about">About Us</HashLink>
                       </li>
                     </Link>
                     <Link to="/features">
                       <li className=" text-xs font-medium tracking-x-wide uppercase cursor-pointer pb-4 md:pr-2">
-                        Our Process
+                      <HashLink smooth to="/#process">Our Process</HashLink>
                       </li>
                     </Link>
                     <Link to="/pricing">
                       <li className=" text-xs font-medium tracking-x-wide uppercase cursor-pointer">
-                        Contact
+                      <HashLink smooth to="/#contact">Contact</HashLink>
                       </li>
                     </Link>
                   </ul>
                 </div>
-                <div className="socials flex justify-center py-6 md:justify-start lg:pt-20 lg:pb-0">
+                <div id="contact" className="socials flex flex-col justify-center py-6 md:justify-start lg:pb-0">
+                <div className='flex flex-col items-center lg:items-start'>
+                <p className='text-white'>786-386-7824</p>
+                <p className=' text-white'>rashodmovingandtransport@gmail.com</p>
+                </div>
+                <div className='flex justify-center items-center lg:justify-start'>
                   <FacebookIcon className="cursor-pointer mr-2 md:mr-3 fill-slate-50" />
                   <InstagramIcon className="cursor-pointer fill-slate-50" />
+                </div>
                 </div>
               </div>
             </div>
@@ -61,17 +65,17 @@ const Footer = ({setOpenModal}) => {
                 </Link>
                 
                   <li className=" text-xs font-medium tracking-x-wide uppercase cursor-pointer pb-4 md:pr-2 hover:text-gray-500">
-                    Stories
+                  <HashLink smooth to="/#about">About Us</HashLink>
                   </li>
                
                 
                   <li className=" text-xs font-medium tracking-x-wide uppercase cursor-pointer pb-4 md:pr-2 hover:text-gray-500">
-                    Features
+                  <HashLink smooth to="/#process">Our Process</HashLink>
                   </li>
                 
                
                   <li className=" text-xs font-medium tracking-x-wide uppercase cursor-pointer hover:text-gray-500">
-                    Pricing
+                  <HashLink smooth to="/#contact">Contact</HashLink>
                   </li>
                 
               </ul>
@@ -87,6 +91,7 @@ const Footer = ({setOpenModal}) => {
               <ArrowIcon className=" stroke-pureWhite cursor-pointer" />
             </div>
             <div className="copyright text-zinc-500 md:pt-16 lg:pt-14">
+              
               <p>Copyright 2022. All Rights Reserved</p>
             </div>
           </div>
