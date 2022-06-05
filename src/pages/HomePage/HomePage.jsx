@@ -29,7 +29,7 @@ const HomePage = ({setOpenModal, executeScroll}) => {
         </div>
       </section>
       <section className='section-2 md:flex '>
-        <img src={PhotoThird} alt="Boxes in Room" className=' w-1/2' />
+        <img src={PhotoThird} alt="Boxes in Room" className=' md:w-1/2' />
         <div className='section-paragraph py-20 px-12 md:w-1/2 md:py-44 lg:px-24'>
           <h1 className=' text-3xl uppercase tracking-wide  text-left font-bold md:text-[2.5rem] md:tracking-[0.260625rem] md:leading-10'>We Carry Safely.</h1>
           <p className='text-base opacity-60 leading-6 mt-4 lg:mt-6'>We use durable materials, boxes, bubble-wrap and plastic to pack your things carefully. We take full responsibility over transportation. </p>
