@@ -17,10 +17,9 @@ const HomePage = ({setOpenModal, executeScroll}) => {
   return (
     <>
       <section id="about" className='section-1 md:flex '>
-        <img src={PhotoFirstMobile} alt="Boxes" className='md:order-2 md:hidden  w-fit' />
-        <img src={PhotoFirstTablet} alt="Man standing on pier" className='md:order-2 hidden md:block lg:hidden w-full' />
-        <img src={PhotoFirstTablet} alt="Man standing on pier" className='md:order-2 hidden md:hidden lg:block w-full' />
-        <div className='section-paragraph py-20 px-12 bg-black text-pureWhite md:order-1 md:py-56 lg:px-24'>
+        <img src={PhotoFirstMobile} alt="Big Rig Truck" className='md:order-2 md:hidden  w-fit' />
+        <img src={PhotoFirstTablet} alt="Big Rig Truck" className='md:order-2 hidden w-1/2 lg:block' />
+        <div className='section-paragraph py-20 px-12 bg-black text-pureWhite md:w-1/2 md:order-1 md:py-56 lg:px-24'>
           <h1 className='text-3xl tracking-wide uppercase text-left font-bold md:text-[2.5rem] md:tracking-[0.260625rem] md:leading-10'>The Quality Shows In Every Move We Make.</h1>
           <p className='text-base font-normal opacity-60 leading-6 mt-4 lg:mt-6'>When it is time to move out of your home or business, it's time to call us. We make it easy on you and faster than the others.</p>
           <div className='link-container flex items-center space-x-3 mt-4 cursor-pointer lg:mt-8 '>
@@ -30,10 +29,8 @@ const HomePage = ({setOpenModal, executeScroll}) => {
         </div>
       </section>
       <section className='section-2 md:flex '>
-        <img src={PhotoThird} alt="Laptop On Desk" className=' w-full' />
-        {/* <img src="../../assets/home/tablet/beautiful-stories.jpg" alt="Laptop On Desk" className=' hidden md:block lg:hidden w-full' />
-        <img src="../../assets/home/desktop/beautiful-stories.jpg" alt="Laptop On Desk" className=' hidden md:hidden lg:block w-full' /> */}
-        <div className='section-paragraph py-20 px-12 md:py-44 lg:px-24'>
+        <img src={PhotoThird} alt="Boxes in Room" className=' w-1/2' />
+        <div className='section-paragraph py-20 px-12 md:w-1/2 md:py-44 lg:px-24'>
           <h1 className=' text-3xl uppercase tracking-wide  text-left font-bold md:text-[2.5rem] md:tracking-[0.260625rem] md:leading-10'>We Carry Safely.</h1>
           <p className='text-base opacity-60 leading-6 mt-4 lg:mt-6'>We use durable materials, boxes, bubble-wrap and plastic to pack your things carefully. We take full responsibility over transportation. </p>
           <div href="#process" className='link-container flex items-center space-x-3 mt-4 cursor-pointer lg:mt-8 '>
@@ -45,10 +42,8 @@ const HomePage = ({setOpenModal, executeScroll}) => {
         </div>
       </section>
       <section className='section-3 md:flex '>
-        <img src={PhotoSecond} alt="Man standing on pier" className='md:order-2 w-full' />
-        {/* <img src="../../assets/home/tablet/designed-for-everyone.jpg" alt="Man standing on pier" className='md:order-2 hidden md:block lg:hidden w-full' />
-        <img src="../../assets/home/desktop/designed-for-everyone.jpg" alt="Man standing on pier" className='md:order-2 hidden md:hidden lg:block w-full' /> */}
-        <div className='section-paragraph py-20 px-12 md:order-1 md:py-44 lg:px-24'>
+        <img src={PhotoSecond} alt="Packages on Truck" className='md:order-2 md:w-1/2' />
+        <div className='section-paragraph py-20 px-12 md:order-1 md:w-1/2 md:py-44 lg:px-24'>
           <h1  className='text-3xl tracking-wide uppercase text-left font-bold md:text-[2.5rem] md:tracking-[0.260625rem] md:leading-10'>Moving Made Easy.</h1>
           <p className='text-base opacity-60 leading-6 mt-4 lg:mt-6'>Team of cargo experts are always available to help you with any queries you might have, or if you want to consult in length your logistic requirements. We would study your requirements and provide you with a quote that would not only suit your budget, but would also save you considerable amount of money in the long term. And, we guarantee that.</p>
           <div onClick={() => {setOpenModal(true); setOpenModal()}} className='link-container flex items-center space-x-3 mt-4 cursor-pointer lg:mt-8 '>

@@ -9,7 +9,7 @@ function Stories({quote, mobile, desktop, tablet, type, quoter, setOpenModal}) {
         <img src={StoryBG} alt="" className="w-full sm:hidden" />
         <img src={StoryBG} alt="" className="w-full hidden sm:block " />
         <div className="content absolute z-50 bottom-2 text-pureWhite w-full px-6 ">
-          <div className="text backdrop-sepia">
+          <div className="">
             <h5 className=" text-xl">{type}</h5>
             <h3 className="font-semibold text-lg md:text-base">" {quote} "</h3>
             <h5 className=' italic text-lg'> - {quoter}</h5>
